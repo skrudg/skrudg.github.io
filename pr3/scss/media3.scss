@@ -1,0 +1,112 @@
+@media (max-width: 1202px)
+{
+  .cloudbudgetbox__navmenu{
+    flex-direction: column;
+  }
+  .managementbox{
+    div.managementbox__imgbox{
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 769px)
+{
+  .cloudbudgetbox__navbox{
+    flex-direction: column;
+    .cloudbudgetbox__navlogo{
+      margin-bottom: 20px;
+    }
+    .cloudbudgetbox__navmenu{
+      .nav-link{
+        margin-left: 0;
+      }
+      margin-bottom: 20px;
+    }
+  }
+}
+@media (max-width: 572px)
+{
+  .cloudbudgetbox{
+    .cloudbudgetbox1{
+      .cloudbudgetbox__contentbox{
+        p.cloudbudgetbox__title{
+          margin-top: 80px;
+          font-size: 40px;
+        }
+        h4.cloudbudgetbox__subtitle{
+          font-size: 18px;
+          width: 300px;
+        }
+        a.cloudbudgetbox__button{
+          padding: 10px 30px 10px 30px;
+          margin-bottom: 80px;
+        }
+      }
+    }
+  }
+  .managementbox{
+    .managementbox__infobox{
+      .management-infobox__title{
+        width: 350px !important;
+        font-size: 25px !important;
+      }
+      .management-infobox__subtitle{
+        width: 350px !important;
+        font-size: 14px;
+      }
+    }
+    .managementbox__imgbox
+    {
+      .uchihavideo{
+        margin-left: 0 !important;
+        width: 350px !important;
+        height: 190px !important;
+      }
+    }
+  }
+  .moneysaving{
+    .moneysaving__box{
+      .moneysaving__infobox{
+        .moneysaving__title{
+          font-size: 36px;
+          width: 350px !important;
+        }
+        .moneysaving__subtitle{
+          font-size: 14px;
+          width: 350px !important;
+          margin-bottom: 20px;
+        }
+      }
+      .moneysaving__photobox{
+        img{
+          width: 320px;
+        }
+      }
+    }
+  }
+  .contact{
+    .contact__infobox{
+      .contact__title{
+        font-size: 20px;
+      }
+      .contact__subtitle{
+        width: 350px !important;
+      }
+    }
+    .contact__form0{
+      .contact__form{
+        .contact-form__inputbox1{
+          justify-content: space-between !important;
+          .contact-form__input{
+            width: 150px !important;
+          }
+        }
+        .contact-form__inputbox2{
+          .contact-form__input{
+            width: 350px !important;
+          }
+        }
+      }
+    }
+  }
+}

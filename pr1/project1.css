@@ -1,0 +1,671 @@
+
+body
+{
+    background-color:beige;
+}
+/*==================HEADER===========================*/
+/*==================БЛОК1============================*/
+.header
+{
+/*    border: 1px solid black;*/
+    display:flex;
+    flex-basis:100%;
+    font-family: arial narrow;
+}
+.header1
+{
+/*    border: 1px solid black;*/
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.header1 a
+{
+/*    border: 1px solid crimson;*/
+    font-size: 12px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 0px 10px 0px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+}
+.header1 a:hover
+{
+    color:crimson;
+}
+.header1 a:active
+{
+    text-decoration: underline;
+}
+.header2
+{
+/*    border: 1px solid black;*/
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+}
+.header21
+{
+/*    border: 1px solid black;*/
+    display: flex;
+    flex-basis: 40%;
+    justify-content:center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.header21 p
+{
+/*    border: 1px solid black;*/
+    font-size: 18px;
+    font-weight: 900;
+}
+.header22
+{
+/*    border: 1px solid black;*/
+    display: flex;
+    flex-basis: 60%;
+    justify-content:center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.header22 a
+{
+    border: 1px solid crimson;
+    font-size: 12px;
+    padding: 10px 30px 10px 30px;
+    margin: 10px 0px 10px 20px;
+    text-decoration: none;
+    color: crimson;
+    font-weight: 700;
+}
+.header22 a:active
+{
+    text-decoration: underline;
+}
+
+
+/*======================Body1=========================*/
+/*======================Блок1============================*/
+
+
+.body1
+{
+/*  border: 1px solid black;*/
+    display: flex;
+    flex-basis: 100%;
+    background-color:beige;
+    margin-bottom: 0px;
+    font-family:arial narrow;
+}
+.info
+{
+/*    border: 1px solid black;*/
+    display: flex;
+    flex-basis: 60%;
+    justify-content:center;
+    margin-bottom: 0px;
+}
+.help
+{
+    /*    border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#name
+{
+/*    border: 1px solid black;*/
+    font-size: 55px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+#work
+{
+/*    border: 1px solid black;*/
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    color: grey;
+}
+.help a
+{
+/*  border: 1px solid black;*/
+    text-decoration: none;
+    color: white;
+    padding: 14px 45px 14px 45px;
+    margin-top: 0px;
+    background-color: orangered;
+    margin-bottom: 100px;
+    font-family: arial narrow;
+    font-size: 12px;
+}
+.help a:active
+{
+    text-decoration: underline;
+}
+/*=================================================*/
+.photo
+{
+    display: flex;
+    flex-basis: 40%;
+    justify-content: left;
+    margin-bottom: 0px;
+}
+.photo img
+{
+/*    border: 1px solid black;*/
+    width: 450px;
+    height: 500px;
+    margin-bottom: 0px;
+}
+/*==================Блок2==========================================================================================*/
+.body2
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    background-color: white;
+    border: 1px solid white;
+    font-family: arial narrow;
+}
+.body2 h1
+{
+    text-align: center;
+/*    border:1px solid black;*/
+    padding:0;
+    margin: 50px 0px 50px 0px;
+}
+.service
+{
+    display:flex;
+    flex-basis:100%;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+/*    border: 1px solid black;*/
+}
+.explaining
+{
+/*    border: 1px solid black;*/
+    flex-basis: 15%;
+    margin: 0px 10px 0px 10px;
+    font-size:13px;
+}
+.explaining p
+{
+    padding:0px;
+    margin-bottom:0px;
+    color: grey;
+/*    border: 1px solid black;*/
+}
+.cost
+{
+    display: flex;
+    justify-content: center;
+}
+.cost a
+{
+    text-decoration: none;
+    color: white;
+    /*    border: 1px solid black;*/
+    padding: 14px 45px 14px 45px;
+    background-color: orangered;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: arial narrow;
+    font-size: 12px;
+}
+.cost a:active
+{
+    text-decoration: underline;
+}
+/*==================Блок3=========================================================================================*/
+.body3
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    font-family: arial narrow;
+/*    border: 1px solid black;*/
+}
+.body3 h1
+{
+    text-align: center;
+/*    border:1px solid black;*/
+    padding:0;
+    margin: 50px 0px 50px 0px;
+}
+.examples
+{
+    display: flex;
+    flex-basis: 100%;
+    justify-content:center;
+    padding: 0px;
+    margin:0px;
+}
+.examples div
+{
+    margin: 0px 10px 0px 10px;
+    padding 0;
+/*    border: 1px solid black;*/
+}
+.magazine img
+{
+    padding 0px 0px 0px 0px;
+    width: 230px;
+    height: 150px;
+    margin-bottom: 0px;
+}
+.magazine p
+{
+    /*    border: 1px solid black;*/
+    margin: 10px 15px 0 15px;
+    padding:0;
+    text-align: center;
+    color: grey;
+}
+.order
+{
+    display: flex;
+    justify-content: center;
+}
+.order h6
+{
+    padding: 14px 45px 14px 45px;
+    margin: 60px 0px 60px 0px;
+/*    border: 1px solid black;*/
+    font-size: 13px;
+    font-family: arial narrow;
+    background-color: orangered;
+}
+#order a
+{
+    text-decoration: none;
+    color:white;
+}
+#order a:active
+{
+    text-decoration: underline;
+}
+.coloredblock
+{
+    display: flex;
+    flex-basis: 100%;
+    background-color: orangered;
+    color:white;
+    justify-content: center;
+}
+.clb
+{
+/*    border: 1px solid white;*/
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+.clb h1
+{
+/*    border:1px solid white;*/
+    text-align: left;
+    margin-bottom: 0px;
+}
+.clb p
+{
+/*    border: 1px solid white;*/
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 13px;
+}
+/*=================FOOTER=========================================================================================*/
+.footer
+{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+.footer1
+{
+/*    border:1px solid black;*/
+    display: flex;
+    flex-basis: 28%;
+    justify-content:flex-end;
+    font-size: 12px;
+    padding:40px 0px 40px 0px;
+}
+.footer11
+{
+/*    border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer11 a
+{
+    margin: 4px 0px 4px 0px;
+    text-decoration: none;
+    color: gray;
+}
+.footer2
+{
+/*    border:1px solid black;*/
+    display: flex;
+    flex-basis: 50%;;
+    justify-content:center;
+}
+.footer21
+{
+/*    border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer21 p
+{
+/*    border:1px solid black;*/
+    margin: 10px 0px 10px 0px;
+    font-weight: 800;
+    font-family: arial narrow;
+}
+.footer21 a
+{
+    text-decoration: none;
+    color: black;
+}
+.footer21 img
+{
+/*    border: 1px solid black;*/
+    width: 14px;
+    height: 12px;
+    margin-right: 8px;
+}
+.footer3
+{
+/*    border:1px solid black;*/
+    display: flex;
+    flex-basis: 28%;
+    justify-content:flex-start;
+}
+.footer31
+{
+/*    border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer31 p
+{
+/*    border:1px solid black;*/
+    margin:7px 0px 7px 0px;
+}
+#tel a
+{
+    border:1px solid crimson;
+    padding:10px 30px 10px 30px;
+    text-decoration: none;
+    color:crimson;
+    font-size: 12px;
+}
+.footer31 a:active
+{
+    text-decoration: underline;
+}
+.footer32 img
+{
+/*    border:1px solid black;*/
+    width: 18px;
+    height: 16px;
+    margin: 10px 5px 0px 7px;
+    justify-content:center;
+}
+
+.year
+{
+    display:flex;
+    flex-basis: 100%;
+    justify-content: center;
+    font-size: 12px;
+    background-color:darkslategray;
+    color: white;
+    font-family: arial narrow;
+}
+
+
+
+
+/*======================================================================================================МЕДИА=ЗАПРОСЫ=====================================================================================================================================*/
+
+
+@media (max-width: 885px)
+{
+    .header
+    {
+/*        border:1px solid black;*/
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    .header1
+    {
+/*        border:1px solid black;*/
+        display:flex;
+        flex-direction: column;
+    }
+    .header1 a
+    {
+/*        border:1px solid crimson;*/
+        width: 90%;
+        background-color: orangered;
+        font-size: 16px;
+        border-radius: 16px;
+    }
+    .header2
+    {
+        display:flex;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+    .header21
+    {
+/*        border:1px solid crimson;*/
+        display:flex;
+        flex-basis: 50%;
+    }
+    .header22
+    {
+/*        border:1px solid crimson;*/
+        display:flex;
+        flex-basis: 50%;
+    }
+    .body3
+    {
+/*        border:1px solid black;*/
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .examples
+    {
+    /*    border:1px solid black;*/
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+        justify-content:center;
+        padding: 0px;
+        margin:0px;
+    }
+    .examples div
+    {
+    /*    border:1px solid black;*/
+        margin: 0px 10px 10px 10px;
+        padding-bottom: 40px;
+    /*    border: 1px solid black;*/
+    }
+    .magazine img
+    {
+    /*    border:1px solid black;*/
+        padding 0px 0px 0px 0px;
+        width: 360px;
+        height: 280px;
+        margin-bottom: 0px;
+    }
+    .magazine p
+    {
+        /*    border: 1px solid black;*/
+        margin: 10px 15px 0 15px;
+        padding:0;
+        text-align: center;
+        color: grey;
+    }
+    .magazine
+    {
+        text-align: center;
+    }
+}
+
+/*=====================================================================*/
+
+@media (max-width: 690px)
+{
+    .body1
+    {
+        display: flex;
+        flex-direction:column;
+        flex-basis: 100%;
+        align-items:center;
+    }
+    .info
+    {
+        background-image: url(project/photo/Dmitry%20Alekseev1.png);
+        background-size: contain;
+        width:400px;
+    }
+    .help
+    {
+        align-items: center;
+    }
+    #name
+    {
+/*        border: 1px solid black;*/
+        font-size: 40px;
+        margin-top: 0px;
+    }
+    #work
+    {
+/*        border:1px solid black;*/
+        font-size: 14px;
+        margin-top:0px;
+        margin-bottom: 0px;
+    }
+    .help a
+    {
+        margin-top: 365px;
+        text-align: end;
+        margin-bottom: 0px;
+        padding-left: 80px;
+        padding-right: 80px;
+        font-weight: 700;
+    }
+    .photo
+    {
+        display:none;
+    }
+    .service
+    {
+/*        border:1px solid black;*/
+        display:grid;
+        justify-items:center;
+        grid-template-columns: 50% 50%;
+        grid-gap: 1em;
+    }
+    .service div
+    {
+/*        border:1px solid black;*/
+    }
+}
+
+/*==============================================================*/
+
+@media (max-width: 575px)
+{
+    .clb h1
+    {
+        font-size:20px;
+    }
+    .footer
+    {
+/*        border:1px solid black;*/
+        display:grid;
+        justify-items: center;
+        grid-template-columns: 50% 50%;
+    }
+    .footer div
+    {
+/*        border:1px solid black;*/
+    }
+    .footer3
+    {
+        grid-column: 1/4
+    }
+    .service
+    {
+/*        border:1px solid black;*/
+        display:grid;
+        justify-items:center;
+        grid-template-columns: 100%;
+    }
+    .service div
+    {
+/*        border:1px solid black;*/
+        margin-bottom: 10px;
+    }
+    .magazine img
+    {
+    /*    border:1px solid black;*/
+        padding 0px 0px 0px 0px;
+        width: 260px;
+        height: 180px;
+        margin-bottom: 0px;
+    }
+}
+
+/*============================================================================*/
+
+@media (max-width:435px )
+{
+    
+}
+
+@media (max-width: 400px)
+{
+    .header21 p
+    {
+        font-size:13px;
+    }
+    .header2 a
+    {
+        padding: 6px 15px 6px 15px;
+        font-size: 10px;
+    }
+    #name
+    {
+        font-size: 25px;
+    }
+    #work
+    {
+        font-size: 12px;
+    }
+}
+/*======================================================*/
+@media (max-width:345px)
+{
+    .footer21 p
+    {
+        font-size: 12px;
+    }
+}

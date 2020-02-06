@@ -1,0 +1,242 @@
+* {
+  border: none;
+  font-family: Lato;
+  transition: all 0.5s ease;
+}
+
+.nav-link {
+  color: white;
+}
+
+.cloudbudgetbox {
+  background-image: url(../photo/fon.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.cloudbudgetbox .cloudbudgetbox1 {
+  background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+}
+.cloudbudgetbox .cloudbudgetbox1 .cloudbudgetbox__navbox .cloudbudgetbox__navmenu .nav-link {
+  font-size: 14px;
+}
+.cloudbudgetbox .cloudbudgetbox1 .cloudbudgetbox__navbox .cloudbudgetbox__navmenu .cloudbudgetbox__navlogin .nav-link {
+  color: white;
+}
+.cloudbudgetbox .cloudbudgetbox1 .cloudbudgetbox__navbox .cloudbudgetbox__navmenu .cloudbudgetbox__navlogin .btn-group * {
+  background-color: aliceblue;
+}
+.cloudbudgetbox .cloudbudgetbox1 .cloudbudgetbox__contentbox {
+  height: auto;
+}
+.cloudbudgetbox .cloudbudgetbox1 .cloudbudgetbox__contentbox .cloudbudgetbox__title {
+  font-size: 72px;
+  margin-bottom: 39px;
+  margin-top: 177px;
+}
+.cloudbudgetbox .cloudbudgetbox1 .cloudbudgetbox__contentbox .cloudbudgetbox__subtitle {
+  width: 500px;
+}
+.cloudbudgetbox .cloudbudgetbox1 .cloudbudgetbox__contentbox .cloudbudgetbox__button {
+  padding: 16px 53px 16px 53px;
+  margin-bottom: 187px;
+  background: white;
+  color: #ED4C5C;
+}
+
+.managementbox {
+  height: auto;
+  flex-basis: 100%;
+}
+.managementbox .managementbox__infobox {
+  flex-basis: 50%;
+}
+.managementbox .managementbox__infobox .management-infobox__title {
+  width: 445px;
+  font-size: 36px;
+}
+.managementbox .managementbox__infobox .management-infobox__subtitle {
+  width: 445px;
+  font-size: 14px;
+}
+.managementbox .managementbox__infobox .management-infobox__button {
+  color: #ED4C5C;
+}
+.managementbox .managementbox__imgbox {
+  flex-basis: 50%;
+}
+
+.featurebox {
+  background-color: #FAFAFA;
+}
+.featurebox .featurebox__title {
+  font-size: 36px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.featurebox .features__contentbox {
+  margin-bottom: 124px;
+}
+.featurebox .features__contentbox .featurebox__box {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.featurebox .features__contentbox .featurebox__box .featurebox__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  width: 293px;
+  margin-top: -90px;
+  background-color: white;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+.featurebox .features__contentbox .featurebox__box .featurebox__info .featurebox-info__title {
+  font-size: 18px;
+  margin: 32px 32px 20px 32px;
+  text-align: center;
+  font-weight: bold;
+}
+.featurebox .features__contentbox .featurebox__box .featurebox__info .featurebox-info__subtitle {
+  font-size: 12px;
+  margin: 0px 32px 5px 32px;
+  text-align: center;
+}
+.featurebox .features__contentbox .featurebox__box .featurebox__info .featurebox-info__button {
+  font-size: 12px;
+  margin: 0px 0px 25px 0px;
+  text-align: center;
+}
+.featurebox .features__contentbox .featurebox__box .featurebox__info .featurebox-info__button a {
+  color: #ED4C5C;
+}
+
+.technology .technology__title {
+  font-size: 36px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.technology .technology__contentbox {
+  margin-bottom: 124px;
+}
+.technology .technology__contentbox .technology__box {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.technology .technology__contentbox .technology__box .technology__photo1 {
+  margin-top: -21px;
+}
+.technology .technology__contentbox .technology__box .technology__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.technology .technology__contentbox .technology__box .technology__info .technology-info__title {
+  font-size: 18px;
+  margin: 32px 32px 20px 32px;
+  text-align: center;
+  font-weight: bold;
+}
+.technology .technology__contentbox .technology__box .technology__info .technology-info__subtitle {
+  font-size: 12px;
+  margin: 0px 32px 5px 32px;
+  width: 191px;
+  text-align: center;
+}
+
+.moneysaving {
+  background: #ED4C5C;
+}
+.moneysaving .moneysaving__box {
+  flex-basis: 100%;
+}
+.moneysaving .moneysaving__box .moneysaving__infobox {
+  flex-basis: 47%;
+}
+.moneysaving .moneysaving__box .moneysaving__infobox .moneysaving__title {
+  font-size: 36px;
+  width: 445px;
+}
+.moneysaving .moneysaving__box .moneysaving__infobox .moneysaving__subtitle {
+  font-size: 14px;
+  width: 445px;
+  margin-bottom: 20px;
+}
+.moneysaving .moneysaving__box .moneysaving__infobox .moneysaving__iconbox {
+  margin-right: auto;
+}
+.moneysaving .moneysaving__box .moneysaving__infobox .moneysaving__iconbox .moneysaving__icons {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.moneysaving .moneysaving__box .moneysaving__photobox {
+  flex-basis: 53%;
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+
+.contact {
+  flex-basis: 100%;
+}
+.contact .contact__infobox {
+  flex-basis: 50%;
+}
+.contact .contact__infobox .contact__title {
+  font-size: 36px;
+  margin-top: 20px;
+}
+.contact .contact__infobox .contact__subtitle {
+  font-size: 14px;
+  width: 434px;
+}
+.contact .contact__form0 .contact__form {
+  margin-top: 117px;
+  margin-bottom: 63px;
+  flex-basis: 50%;
+}
+.contact .contact__form0 .contact__form .contact-form__inputbox1 .contact-form__input {
+  width: 255px;
+  border: 1px solid grey;
+}
+.contact .contact__form0 .contact__form .contact-form__inputbox2 .contact-form__input {
+  width: 542px;
+  border: 1px solid grey;
+}
+.contact .contact__form0 .contact__form .contact-form__inputbox2 .button {
+  color: white;
+  background-color: #ED4C5C;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #FAFAFA;
+}
+.footer .footer__links {
+  font-size: 12px;
+  color: black;
+}
+.footer .footer__menu {
+  margin-top: 86px;
+  margin-bottom: 86px;
+}
+.footer .footer__menu div {
+  width: 245px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.footer .footer__menu .footer__header {
+  font-size: 18px;
+  margin-bottom: 28px;
+  font-weight: bold;
+}
+.footer .footer__menu .socials {
+  width: auto;
+}
+.footer .footer__menu .socials .socials__img {
+  margin-right: 16px;
+}
+.footer .footer__copyright {
+  margin-bottom: 86px;
+}

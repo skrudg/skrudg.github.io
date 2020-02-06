@@ -1,0 +1,458 @@
+*{
+  padding: 0;
+  margin: 0;
+  transition: all 0.5s ease;
+  font-family: Arial Narrow;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+//ELEMENTS===================================
+$testborder: none;
+// $testborder: 1px solid black;
+$border: 1px solid black;
+//MIXINS=====================================
+@mixin link{
+  text-decoration: none;
+  color:black;
+  font-family: Gilroy;
+  font-size:18px;
+  &:hover{
+    color: #F7941E;
+  }
+
+}
+@mixin logo{
+  font-family: Homemade Apple;
+  font-size: 18px;
+  color:black;
+}
+@mixin button{
+  border: $border;
+  border-radius: 5px;
+  @include link;
+  font-size: 18px;
+  padding: 10px 25px 10px 25px;
+}
+//HEADER====================================
+.header{
+  border: $testborder;
+  display: grid;
+  grid-template-columns: 27% 46% 27%;
+  .header__logo{
+    border:$testborder;
+    @include logo;
+    justify-self: start;
+    align-self: center;
+    padding: 39px 0px 39px 80px;
+  }
+  .header__menu{
+    border: $testborder;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .header__item{
+      @include link;
+      border:$testborder;
+      margin: auto 15px auto 15px;
+    }
+  }
+  .header__buttonbox{
+    border: $testborder;
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    .header__link{
+      @include button;
+      border-color: #F7941E;
+      color: #F7941E;
+      margin-right: 34px;
+    }
+  }
+}
+//BODY==============================================
+.body{
+  border:$testborder;
+  display:flex;
+  flex-direction: column;
+}
+.body__findgift{
+  border:$testborder;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  .findgift__info{
+    border:$testborder;
+    background-color: #F1F1F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    padding-left: 162px;
+    .findgift-info__title{
+      border:$testborder;
+      font-size:56px;
+      margin: 0px 126px 36px 0px;
+    }
+    .findgift-info__subtitle{
+      border: $testborder;
+      font-size: 20px;
+      margin:0px 137px 52px 0px;
+    }
+    .findgift-info__button{
+      @include button;
+      border-color: #F7941E;
+      background-color:#F7941E;
+      color: white;
+      font-size: 18px;
+      &:hover{
+        color: black;
+      }
+    }
+  }
+  .findgift__photo{
+    border: $testborder;
+    background-image: url(../photos/Background.jpg);
+    background-position: center;
+    height: 700px;
+    background-size: cover;
+
+  }
+}
+//=====================================================
+.body__howwork{
+  border:$testborder;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  .howwork__photo{
+    border: $testborder;
+    background-image: url(../photos/Background1.jpg);
+    background-position: center;
+    height: 600px;
+    background-size: cover;
+  }
+  .howwork__info{
+    border:$testborder;
+    background-color: #F1F1F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    padding-left: 102px;
+    .howwork-info__title{
+      border:$testborder;
+      font-size:32px;
+      margin: 0px 126px 23px 0px;
+    }
+    .howwork-info__subtitle{
+      border: $testborder;
+      font-size: 20px;
+      margin:0px 137px 35px 0px;
+    }
+    .howwork-info__button{
+      @include button;
+      border-color: #F7941E;
+      color: #F7941E;
+      font-size: 18px;
+    }
+  }
+}
+// =================================================================
+.giftsfor{
+  border: $testborder;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .giftsfor__title{
+    border: $testborder;
+    font-size: 32px;
+    margin-top: 96px;
+    margin-bottom: 23px;
+  }
+  .giftsfor__subtitle{
+    border: $testborder;
+    font-size: 18px;
+    margin-bottom: 64px;
+  }
+  .giftsfor__items{
+    border: $testborder;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 137px;
+    .giftsfor__item{
+      &:hover{
+        background: #FFFFFF;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+      }
+      border: $testborder;
+      background: #FAFAFA;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 15px;
+      margin-right: 15px;
+      .giftsfor__textbox{
+        display: flex;
+        flex-direction: column;
+        .giftsfor-items__type{
+          border:$testborder;
+          margin: 24px 24px 74px 24px;
+          font-size: 16px;
+        }
+
+        .giftsfor-items__seemore{
+          border: $testborder;
+          @include link;
+          font-size: 14px;
+          margin-left: 24px;
+          margin-bottom: 24px;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+}
+// =======================================================================
+.ready{
+  border: $testborder;
+  background: #F7941E;
+  display: flex;
+  flex-basis: 100%;
+  .ready__textbox{
+    border: $testborder;
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    height: 162px;
+    .ready__text1{
+      border: $testborder;
+      font-weight: bold;
+    }
+    .ready__text2{
+      border: $testborder;
+      margin-left: -21px;
+    }
+  }
+  .ready__buttonbox{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+
+    .ready__button1{
+      @include button;
+      margin-left: 20px;
+      margin-right: 10px;
+      background: black;
+      color: silver;
+    }
+    .ready__button2{
+      @include button;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}
+// ================================================================
+.body__bestblogs{
+  border: $testborder;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .bestblogs__title{
+    border: $testborder;
+    font-size: 32px;
+    margin-top: 88px;
+    margin-bottom: 23px;
+  }
+  .bestblogs__subtitle{
+    border: $testborder;
+    font-size: 18px;
+    margin-bottom: 71px;
+  }
+  .bestblogs__mainbox{
+    border: $testborder;
+    display: flex;
+    flex-direction: column;
+    width:85%;
+    .mainbox__infobox1{
+      border: $testborder;
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      // justify-items: start;
+      margin-bottom: 40px;
+      .bestblogs__img{
+        background-image: url(../photos/Media.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width:100%;
+      }
+      .infobox1__texts{
+        background-color: #231F20;
+        border: $testborder;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 78px;
+
+        .infobox1__name{
+          border: $testborder;
+          border-color: white;
+          margin-top: 63px;
+          margin-bottom: 27px;
+          font-size: 14px;
+          height: 20px;
+          // margin-right: auto;
+        }
+        .infobox1__title{
+          border: $testborder;
+          border-color: white;
+          font-size: 48px;
+          height: 125px;
+          width: 450px;
+          margin-bottom: 60px;
+        }
+        .infobox1__readmore{
+          border: $testborder;
+          @include link;
+          color: white;
+          border-color: white;
+          font-size: 18px;
+          margin-bottom: 45px;
+          // margin-right: auto;
+        }
+      }
+    }
+    .mainbox__infobox2{
+      border: $testborder;
+      display: grid;
+      grid-template-columns: 49% 49%;
+      column-gap: 2%;
+      margin-bottom: 60px;
+      .infobox2__infobox21{
+        &:hover{
+          background: #FFFFFF;
+          box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+        }
+        border: $testborder;
+        background-color: #FAFAFA;
+        display: flex;
+        flex-direction: column;
+        padding-left: 48px;
+        .infobox21__title{
+          border:$testborder;
+          font-size: 24px;
+          margin: 48px 48px 16px 0px;
+        }
+        .infobox21__subtitle{
+          border:$testborder;
+          font-size: 18px;
+          margin: auto 48px 16px 0px;
+          height: 72px;
+        }
+        .infobox21__readmore{
+          border: $testborder;
+          @include link;
+          font-size: 14px;
+          margin-left: -px;
+          margin-bottom: 50px;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+}
+// FOOTER==============================================================
+.footer{
+  border: $testborder;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  .footer__border{
+    border: $testborder;
+    width: 80%;
+    .footer__menu{
+      border:$testborder;
+      display: flex;
+      flex-basis: 100%;
+      margin-top: 115px;
+      padding-bottom: 43px;
+      border-bottom: 1px solid black;
+      justify-content: center;
+      align-items: center;
+      .footer__logo{
+        border:$testborder;
+        @include logo;
+        color: #F7941E;
+      }
+      .menu__left-link{
+        display: flex;
+        justify-content:center;
+        border:$testborder;
+        margin-right: 100px;
+        .footer__link{
+          border:$testborder;
+          @include link;
+          margin-left: 40px;
+          margin-right: 40px;
+          font-size: 14px;
+        }
+      }
+      .menu__right-link{
+        display: flex;
+        justify-content:center;
+        border:$testborder;
+        margin-left: 100px;
+        .footer__link{
+          border:$testborder;
+          @include link;
+          margin-left: 40px;
+          margin-right: 40px;
+          font-size: 14px;
+        }
+      }
+    }
+    .footer__social{
+      border:$testborder;
+      display: flex;
+      margin-top: 55px;
+      margin-bottom: 72px;
+      justify-content: center;
+      .footer__image{
+        margin-left: 13px;
+        margin-right:13px;
+      }
+    }
+    .footer__privacybox{
+      border:$testborder;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 35px;
+      .footer__date{
+        margin-right: 7px;
+        margin-left: 7px;
+      }
+      .footer__privacy{
+        text-decoration: none;
+        color: black;
+        margin-right: 7px;
+        margin-left: 7px;
+      }
+    }
+  }
+}
