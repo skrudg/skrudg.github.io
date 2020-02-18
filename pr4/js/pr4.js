@@ -91,6 +91,7 @@ if (task == 3) {
 }
 
 if (task == 4) {
+    alert("Откройте консоль!");
     var num;
     var checkNum = 0;
     var factorial = 1;
