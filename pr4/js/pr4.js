@@ -364,7 +364,7 @@ if (task == 15) {
         while (true) {
             var newLi = prompt("Введите текст для пункта списка", "");
 
-            if (newLi === null || newLi === 0) {
+            if (newLi === null || newLi === 0 || newLi == "") {
                 break;
             }
 
