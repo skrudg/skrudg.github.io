@@ -238,7 +238,7 @@ if (task == 9) {
         } else {
             alert('Ваш браузер не поддерживает тег canvas...');
         }
-    }
+    };
     setTimeout(function() {
         answerCheckNum = prompt("Желаете выполнить следующее задание? 1 - yes / 0 - no", answerCheckNum);
         if (answerCheckNum == 1) {
@@ -293,6 +293,14 @@ if (task == 11) {
             testElem.style.color = "red";
         }
     }
+    setTimeout(function() {
+        answerCheckNum = prompt("Желаете выполнить следующее задание? 1 - yes / 0 - no", answerCheckNum);
+        if (answerCheckNum == 1) {
+            location.reload();
+        } else {
+            alert("Bye,Bye!");
+        }
+    }, 5000);
 }
 
 if (task == 12) {
@@ -302,6 +310,14 @@ if (task == 12) {
         lielement.innerHTML = tasks[i];
         ol.before(lielement);
     }
+    setTimeout(function() {
+        answerCheckNum = prompt("Желаете выполнить следующее задание? 1 - yes / 0 - no", answerCheckNum);
+        if (answerCheckNum == 1) {
+            location.reload();
+        } else {
+            alert("Bye,Bye!");
+        }
+    }, 5000);
 }
 
 
@@ -311,6 +327,14 @@ if (task == 13) {
         var line = document.createElement('hr');
         par[i].append(line);
     }
+    setTimeout(function() {
+        answerCheckNum = prompt("Желаете выполнить следующее задание? 1 - yes / 0 - no", answerCheckNum);
+        if (answerCheckNum == 1) {
+            location.reload();
+        } else {
+            alert("Bye,Bye!");
+        }
+    }, 5000);
 }
 
 if (task == 14) {
@@ -322,6 +346,14 @@ if (task == 14) {
         x.replaceChild(textnode, x.lastChild);
         x.children[3].remove();
     }
+    setTimeout(function() {
+        answerCheckNum = prompt("Желаете выполнить следующее задание? 1 - yes / 0 - no", answerCheckNum);
+        if (answerCheckNum == 1) {
+            location.reload();
+        } else {
+            alert("Bye,Bye!");
+        }
+    }, 5000);
 }
 
 
@@ -353,4 +385,12 @@ if (task == 15) {
             referenceNode[i].appendChild(newNode);
         }
     }
+    setTimeout(function() {
+        answerCheckNum = prompt("Желаете выполнить следующее задание? 1 - yes / 0 - no", answerCheckNum);
+        if (answerCheckNum == 1) {
+            location.reload();
+        } else {
+            alert("Bye,Bye!");
+        }
+    }, 5000);
 }
