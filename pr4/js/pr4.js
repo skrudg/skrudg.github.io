@@ -153,6 +153,7 @@ if (task == 5) {
 }
 
 if (task == 6) {
+    alert("Откройте консоль!");
     var myColor = ["Red", "Green", "White", "Black"];
     var myColorStr;
     console.log("Sample array : " + myColor);
