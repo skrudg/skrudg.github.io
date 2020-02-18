@@ -16,7 +16,6 @@ var tasklist = ['Здесь полный список задач, введите
     'Задача 15 - Ввод задач пользователем:         15\n'
 ];
 var answerCheckNum = 0;
-// startfull: while (true) {
 var task = prompt(tasklist, task);
 if (task == 1) {
     alert("Откройте консоль!");
@@ -29,7 +28,6 @@ if (task == 1) {
     console.log("При использовании в цикле, для каждой итерации создается своя переменная. Переменная var - одна на все итерации цикла и видна даже после цикла. С переменной let - все по-другому. Каждому повторению цикла соответствует своя независимая переменная let. Если внутри цикла есть вложенные обьявления функций, то в замыкании каждой будет та переменная, которая быа при соответствующей итерации...");
     setTimeout(function() {
         answerCheckNum = prompt("Желаете выполнить следующее задание? 1 - yes / 0 - no", answerCheckNum);
-        // alert(answerCheckNum);
         if (answerCheckNum == 1) {
             location.reload();
         } else {
@@ -250,19 +248,19 @@ if (task == 9) {
 }
 
 if (task == 10) {
-    // alert("Откройте консоль!");
+    alert("Откройте консоль!");
     var song1 = document.getElementById('string-3');
     var song2 = document.getElementById('string-5');
     var song3 = document.getElementById('string-2');
     var song4 = document.getElementById('string-6');
     var song5 = document.getElementById('string-4');
     var song6 = document.getElementById('string-1');
-    // console.log(song1);
-    // console.log(song2);  
-    // console.log(song3);
-    // console.log(song4);
-    // console.log(song5);
-    // console.log(song6);
+    console.log(song1.textContent);
+    console.log(song2.textContent);  
+    console.log(song3.textContent);
+    console.log(song4.textContent);
+    console.log(song5.textContent);
+    console.log(song6.textContent);
     function sort() {
         var songs = document.getElementById('strings');
         songs.append(song1);
