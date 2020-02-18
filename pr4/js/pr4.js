@@ -215,7 +215,7 @@ if (task == 8) {
 }
 
 if (task == 9) {
-    function drawShape() {
+    window.onload = function drawShape() {
         var canvas = document.getElementById('myDrawing');
         if (canvas.getContext) {
             var ctx = canvas.getContext('2d');
