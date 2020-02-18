@@ -314,24 +314,43 @@ if (task == 13) {
 }
 
 if (task == 14) {
-    var items = document.getElementById('cart-items');
-    alert(items);
+    function Remove() {
+        var textnode = document.createTextNode("Canned Fish");
+        var x = document.getElementById("cartitems");
+
+        x.children[1].remove();
+        x.replaceChild(textnode, x.lastChild);
+        x.children[3].remove();
+    }
 }
 
 
 
 
 if (task == 15) {
-    var all_tasks = [];
-    var task;
-    while (true) {
-        task = prompt("Введите задачи", task);
-        if (task == '') {
-            break;
+    function addinfo() {
+        var ul = document.createElement('ul');
+        document.body.appendChild(ul);
+        while (true) {
+            var newLi = prompt("Введите текст для пункта списка", "");
+
+            if (newLi === null || newLi === 0) {
+                break;
+            }
+
+            var li = document.createElement('li');
+            li.appendChild(document.createTextNode(newLi));
+            ul.appendChild(li);
         }
-        all_tasks.push(task);
     }
-    for (var i = 0; i < all_tasks.length; i++) {
-        console.log(1 + i + "-" + all_tasks[i]);
+
+    function hrline() {
+        //  var all=document.getElementByTagName('*');
+
+        var referenceNode = document.querySelectorAll('p');
+        for (var i = 0; i < referenceNode.length; i++) {
+            var newNode = document.createElement('hr');
+            referenceNode[i].appendChild(newNode);
+        }
     }
 }
