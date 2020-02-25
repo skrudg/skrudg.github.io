@@ -1,24 +1,24 @@
-var mainDiv = document.createElement("div");
-mainDiv.className = "mainbox";
+var mainDiv = document.createElement("div");//создание главного блока, который включает в  себя все
+mainDiv.className = "mainbox";// все что вы увидите на экране
 
-var header = document.createElement("div");
+var header = document.createElement("div");//создание блока для шапки -> (поле для ввода, кнопка добавить)
 header.className = "header d-flex flex-column align-items-center justify-content-center";
 header.id = "myDIV";
 
-var input = document.createElement("input");
+var input = document.createElement("input");//создание элемента input
 input.setAttribute("type", "text");
 input.setAttribute("placeholder", "Введите новое задание");
 input.id = "myInput";
 header.appendChild(input);
 
-var button = document.createElement("button");
+var button = document.createElement("button");//создание кнопки для добавления
 button.setAttribute("onclick", "newElement()");
 button.className = "addBtn mt-4";
 button.innerHTML = "Нажмите, чтобы добавить";
 header.appendChild(button);
 mainDiv.appendChild(header);
 
-var divList = document.createElement("div");
+var divList = document.createElement("div");//блок, который будет включать в себя дальнейшие списки задач
 divList.className = "mainbox__tasks";
 divList.id = "myDivList";
 
@@ -48,7 +48,7 @@ function newElement() {
     }
     input.value = "";
 
-    var span = document.createElement("SPAN");
+    var span = document.createElement("span");
     var txt = document.createTextNode("\u00D7");//значек удаления
     span.className = "close";
     span.appendChild(txt);
