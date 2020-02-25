@@ -1,5 +1,5 @@
 
-/* Style the list items */
+/* Стили записей*/
  #myDivList .divListElement {
   cursor: pointer;
   position: relative;
@@ -9,9 +9,9 @@
   transition: 0.2s;
 }
 
-/* Style the close button */
+/* Стили кнопок для удаления записей */
 .close {
-  align-self: center;
+  padding: 12px 16px 12px 16px;
   position: absolute;
   right: 0;
   top: 0;
@@ -22,14 +22,14 @@
   background-color: grey;
   color: white;
 }
-/* Style the header */
+/* Стили для шапки */
 .header {
   background-color: aqua;
   padding: 30px 40px;
   color: white;
   text-align: center;
 }
-/* Style the input */
+/* Стили строки для ввода записей */
 input {
   margin: 0;
   border-radius: 3px;
@@ -37,7 +37,7 @@ input {
   padding: 10px;
 }
 
-/* Style the "Add" button */
+/* Стили кнопки для добавления */
 .addBtn {
   padding: 10px;
   width: 20%;

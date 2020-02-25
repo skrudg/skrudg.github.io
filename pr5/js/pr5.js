@@ -25,7 +25,7 @@ divList.id = "myDivList";
 mainDiv.appendChild(divList);
 document.body.appendChild(mainDiv);
 
-// Click on a close button to hide the current list item
+// Блок кода для удаления записей при нажатии на кнопку удаления
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -34,7 +34,7 @@ for (i = 0; i < close.length; i++) {
         div.style.display = "none";
     };
 }
-// Create a new list item when clicking on the "Add" button
+// Блок кода для добавления записей при нажатии на кнопку добавления
 function newElement() {
     var divListElement = document.createElement("div");
     divListElement.className = "divListElement";
@@ -42,14 +42,14 @@ function newElement() {
     var t = document.createTextNode(inputValue);
     divListElement.appendChild(t);
     if (inputValue === '') {
-        alert("You must write something!");
+        alert("Введите запсись!");
     } else {
         divList.appendChild(divListElement);
     }
     input.value = "";
 
     var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
+    var txt = document.createTextNode("\u00D7");//значек удаления
     span.className = "close";
     span.appendChild(txt);
     divListElement.appendChild(span);
