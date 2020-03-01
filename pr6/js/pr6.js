@@ -51,6 +51,36 @@ if (task == 1) {
 }
 if (task == 2) {
 
+    var div = document.createElement("div");
+    div.className = "searchBox";
+
+    var input = document.createElement("input");
+    input.setAttribute("type", "text");
+    input.setAttribute("placeholder", "Введите название гифки...");
+    input.id = "myInput";
+    div.appendChild(input);
+
+    var button = document.createElement("button");
+    button.setAttribute("onclick", "searchGif()");
+    button.className = "addBtn";
+    button.innerHTML = "Поиск";
+    button.style = "margin-top: 20px";
+    div.appendChild(button);
+    document.body.appendChild(div);
+
+    function searchGif() {
+        var result = document.createElement("div");
+        result.className = "searchResult";
+        var inputValue = input.value;
+
+
+        var img = document.createElement("img");
+        img.src = `https://api.giphy.com/v1/gifs/search?q=${inputValue}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
+
+        div.appendChild(result);
+        input.value = "";
+    }
+
 } else if (task > 2) {
     alert("Введите правильный номер задания!");
     window.location.reload();
