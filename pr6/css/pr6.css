@@ -1,18 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     /* border: 1px solid black; */
 }
-.categories{
+
+.categories {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.forMarginTop{
+
+.forMarginTop {
     margin-top: 0px !important;
 }
-.title-idBox{
+
+.title-idBox {
     display: flex;
     flex-direction: column;
     background-color: goldenrod;
@@ -22,19 +25,22 @@
     justify-content: center;
     align-items: center;
 }
-.categories__id{
+
+.categories__id {
     text-align: center;
     font-size: 30px;
     width: 49px;
     background-color: grey;
     border-radius: 19px;
 }
-.categories__titles{
+
+.categories__titles {
     text-align: center;
     width: 100%;
     font-size: 30px;
 }
-.categories__images{
+
+.categories__images {
     width: 50%;
     height: 25%;
     border: 5px solid grey;

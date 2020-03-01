@@ -8,17 +8,15 @@ var task = prompt(tasklist, task);
 if (task == 1) {
     const requestURL = 'http://46.101.146.101:8081/categories/'
 
-    function sendRequest(method, url){
-        return fetch(url).then(function(response){
+    function sendRequest(method, url) {
+        return fetch(url).then(function(response) {
             return response.json();
-        })
+        });
     }
 
     sendRequest('GET', requestURL)
-        .then(function(data)
-        {
-            for(var i = 0; i<data.length; i++)
-            {
+        .then(function(data) {
+            for (var i = 0; i < data.length; i++) {
                 var div = document.createElement("div");
                 div.className = "categories";
 
@@ -42,22 +40,18 @@ if (task == 1) {
                 div.appendChild(imgTag);
 
                 document.body.appendChild(div);
-                if(i === 0)
-                {
+                if (i === 0) {
                     subDiv.className = "title-idBox forMarginTop";
                 }
             }
         })
-        .catch(function(error)
-        {
+        .catch(function(error) {
             document.write(error);
-        })
+        });
 }
-if(task == 2)
-{
-    
-}
-else if(task > 2){
+if (task == 2) {
+
+} else if (task > 2) {
     alert("Введите правильный номер задания!");
     window.location.reload();
 }
