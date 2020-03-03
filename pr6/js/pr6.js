@@ -85,13 +85,11 @@ if (task == 2) {
             .then(function(item) {
                 var divtag = document.createElement("div");
                 document.body.appendChild(divtag);
-                for (var i = 0; item.data.length; i++) {
-                    // var img = document.createElement("img");
-                    // img.src = "https://giphy.com/gifs/bad-6BZaFXBVPBtok/giphy.gif";
-                    // divtag.appendChild(img);
-                    // console.log(item.data[i]);
+                for (var i = 0; i < item.data.length; i++) {
+                    var img = document.createElement("img");
+                    img.src = (item.data[i].images.fixed_width.url);
+                    divtag.appendChild(img);
                 }
-                console.log();
             })
             .catch(function(error) {
                 document.write(error);
