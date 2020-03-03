@@ -6,7 +6,7 @@ var answerCheckNum = 0;
 var task = prompt(tasklist, task);
 
 if (task == 1) {
-    const requestURL = 'http://46.101.146.101:8081/categories/'
+    const requestURL = 'http://46.101.146.101:8081/categories/';
 
     function sendRequest(method, url) {
         return fetch(url).then(function(response) {
@@ -64,36 +64,40 @@ if (task == 2) {
     button.setAttribute("onclick", "searchGif()");
     button.className = "addBtn";
     button.innerHTML = "Поиск";
-    button.style = "margin-top: 20px";
+    // button.style = "margin-top: 20px";
     div.appendChild(button);
     document.body.appendChild(div);
 
     function searchGif() {
+        // alert("hello!");
         var result = document.createElement("div");
         result.className = "searchResult";
-        var inputValue = input.value;
-
+        var inputValue = `http://api.giphy.com/v1/gifs/search?q=${input.value}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
+        // result.innerHTML = "hello";
 
         var img = document.createElement("img");
-        img.src = `http://api.giphy.com/v1/gifs/search?q=${inputValue}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
+        // img.src = `http://api.giphy.com/v1/gifs/search?q=${inputValue}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
 
         div.appendChild(result);
         input.value = "";
-    }
+        requestURL = inputValue;
+        // document.write(img.src);
+        function sendRequest(method, url) {
+            return fetch(url).then(function(response) {
+                return response.json();
+            });
+        }
 
-    function sendRequest(method, url) {
-        return fetch(url).then(function(response) {
-            return response.json();
-        });
+        sendRequest('GET', requestURL)
+            .then(function(data) {
+                // img.src = (data);
+                // alert("hi");
+                console.log(data);
+            })
+            .catch(function(error) {
+                document.write(error);
+            });
     }
-
-    sendRequest('GET', requestURL)
-        .then(function(data) {
-            
-        })
-        .catch(function(error) {
-            document.write(error);
-        });
 
 } else if (task > 2) {
     alert("Введите правильный номер задания!");
