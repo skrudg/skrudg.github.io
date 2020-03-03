@@ -83,15 +83,15 @@ if (task == 2) {
 
         sendRequest('GET', requestURL)
             .then(function(item) {
+                var divtag = document.createElement("div");
+                document.body.appendChild(divtag);
                 for (var i = 0; item.data.length; i++) {
-                    // var divtag = document.createElement("div");
                     // var img = document.createElement("img");
-                    // img.src = (item.data[i].images.downsized.url);
+                    // img.src = "https://giphy.com/gifs/bad-6BZaFXBVPBtok/giphy.gif";
                     // divtag.appendChild(img);
-                    // document.body.appendChild(divtag);
-                    console.log(item.data[i].images.downsized.url);
+                    // console.log(item.data[i]);
                 }
-                // console.log(item);
+                console.log();
             })
             .catch(function(error) {
                 document.write(error);
