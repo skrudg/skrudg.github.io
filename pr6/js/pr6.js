@@ -63,12 +63,14 @@ if (task == 2) {
 
     var button = document.createElement("button");
     button.setAttribute("onclick", "searchGif()");
+    button.setAttribute("value", "search");
     button.className = "addBtn";
     button.innerHTML = "Поиск";
     div.appendChild(button);
     document.body.appendChild(div);
 
     function searchGif() {
+        // e.preventDefault();
         var inputValue = `http://api.giphy.com/v1/gifs/search?q=${input.value}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
 
         requestURL = inputValue;
@@ -82,12 +84,11 @@ if (task == 2) {
         sendRequest('GET', requestURL)
             .then(function(item) {
                 for (var i = 0; item.data.length; i++) {
-                    var DIV = document.createElement("div");
-                    var video = document.createElement("video");
-                    video.src = "item.data[i].images.downsized.url";
-                    // video.alt = item.data[i].title;
-                    DIV.appendChild("video");
-                    document.body.appendChild("DIV");
+                    // var divtag = document.createElement("div");
+                    // var img = document.createElement("img");
+                    // img.src = (item.data[i].images.downsized.url);
+                    // divtag.appendChild(img);
+                    // document.body.appendChild(divtag);
                     console.log(item.data[i].images.downsized.url);
                 }
                 // console.log(item);
