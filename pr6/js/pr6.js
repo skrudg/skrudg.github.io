@@ -75,11 +75,25 @@ if (task == 2) {
 
 
         var img = document.createElement("img");
-        img.src = `https://api.giphy.com/v1/gifs/search?q=${inputValue}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
+        img.src = `http://api.giphy.com/v1/gifs/search?q=${inputValue}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
 
         div.appendChild(result);
         input.value = "";
     }
+
+    function sendRequest(method, url) {
+        return fetch(url).then(function(response) {
+            return response.json();
+        });
+    }
+
+    sendRequest('GET', requestURL)
+        .then(function(data) {
+            
+        })
+        .catch(function(error) {
+            document.write(error);
+        });
 
 } else if (task > 2) {
     alert("Введите правильный номер задания!");
