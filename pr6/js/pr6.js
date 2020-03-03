@@ -1,6 +1,6 @@
 var tasklist = ['Здесь полный список задач, введите соответствующие к ним значения, чтобы запустить задачи...\n\n',
     'Задача 1 - Fetch() запрос:              1\n',
-    'Задача 2 - Вывести Gif:             2\n',
+    'Задача 2 - Вывести Gif:                2\n',
 ];
 var answerCheckNum = 0;
 var task = prompt(tasklist, task);
@@ -54,11 +54,15 @@ if (task == 2) {
     var div = document.createElement("div");
     div.className = "searchBox";
 
+    var h2 = document.createElement("h2");
+    h2.className = "searchTitle";
+    h2.innerHTML = "GIF search";
+    div.appendChild(h2);
+
     var input = document.createElement("input");
     input.setAttribute("type", "search");
-    // input.type="search"
+    input.className="myInput";
     input.setAttribute("placeholder", "Введите название гифки...");
-    input.id = "myInput";
     div.appendChild(input);
 
     var button = document.createElement("button");
@@ -70,7 +74,7 @@ if (task == 2) {
     document.body.appendChild(div);
 
     function searchGif() {
-        var limit = 5;
+        var limit = 3;
         var inputValue = `https://api.giphy.com/v1/gifs/search?q=${input.value}&limit=${limit}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
 
         requestURL = inputValue;
@@ -84,6 +88,7 @@ if (task == 2) {
         sendRequest('GET', requestURL)
             .then(function(item) {
                 var divtag = document.createElement("div");
+                divtag.className = "searchResultBox";
                 document.body.appendChild(divtag);
                 for (var i = 0; i < item.data.length; i++) {
                     var img = document.createElement("img");

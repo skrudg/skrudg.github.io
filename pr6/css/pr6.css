@@ -45,3 +45,41 @@
     height: 25%;
     border: 5px solid grey;
 }
+/*==============================================*/
+/*=================task 2=======================*/
+/*==============================================*/
+.searchBox{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid grey;
+    background-color: green;
+}
+.searchTitle{
+    font-size: 40px; 
+    margin-bottom: 20px;
+}
+.myInput{
+    width: 30%;
+    height: 40px;
+    margin-bottom: 20px;
+
+}
+.addBtn{
+    width: 10%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.searchResultBox{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px 10px;
+}
