@@ -55,7 +55,8 @@ if (task == 2) {
     div.className = "searchBox";
 
     var input = document.createElement("input");
-    input.setAttribute("type", "text");
+    input.setAttribute("type", "search");
+    // input.type="search"
     input.setAttribute("placeholder", "Введите название гифки...");
     input.id = "myInput";
     div.appendChild(input);
@@ -64,24 +65,14 @@ if (task == 2) {
     button.setAttribute("onclick", "searchGif()");
     button.className = "addBtn";
     button.innerHTML = "Поиск";
-    // button.style = "margin-top: 20px";
     div.appendChild(button);
     document.body.appendChild(div);
 
     function searchGif() {
-        // alert("hello!");
-        var result = document.createElement("div");
-        result.className = "searchResult";
         var inputValue = `http://api.giphy.com/v1/gifs/search?q=${input.value}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
-        // result.innerHTML = "hello";
 
-        var img = document.createElement("img");
-        // img.src = `http://api.giphy.com/v1/gifs/search?q=${inputValue}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
-
-        div.appendChild(result);
-        input.value = "";
         requestURL = inputValue;
-        // document.write(img.src);
+
         function sendRequest(method, url) {
             return fetch(url).then(function(response) {
                 return response.json();
@@ -89,14 +80,23 @@ if (task == 2) {
         }
 
         sendRequest('GET', requestURL)
-            .then(function(data) {
-                // img.src = (data);
-                // alert("hi");
-                console.log(data);
+            .then(function(item) {
+                for (var i = 0; item.data.length; i++) {
+                    var DIV = document.createElement("div");
+                    var video = document.createElement("video");
+                    video.src = "item.data[i].images.downsized.url";
+                    // video.alt = item.data[i].title;
+                    DIV.appendChild("video");
+                    document.body.appendChild("DIV");
+                    console.log(item.data[i].images.downsized.url);
+                }
+                // console.log(item);
             })
             .catch(function(error) {
                 document.write(error);
             });
+
+        input.value = "";
     }
 
 } else if (task > 2) {
