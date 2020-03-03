@@ -70,8 +70,8 @@ if (task == 2) {
     document.body.appendChild(div);
 
     function searchGif() {
-        // e.preventDefault();
-        var inputValue = `http://api.giphy.com/v1/gifs/search?q=${input.value}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
+        var limit = 5;
+        var inputValue = `http://api.giphy.com/v1/gifs/search?q=${input.value}&limit=${limit}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
 
         requestURL = inputValue;
 
