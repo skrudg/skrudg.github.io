@@ -71,7 +71,7 @@ if (task == 2) {
 
     function searchGif() {
         var limit = 5;
-        var inputValue = `http://api.giphy.com/v1/gifs/search?q=${input.value}&limit=${limit}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
+        var inputValue = `https://api.giphy.com/v1/gifs/search?q=${input.value}&limit=${limit}&api_key=boeWbb5zfVkZ9gCOp8VVcXPFAJwF6c2n`;
 
         requestURL = inputValue;
 
