@@ -24,7 +24,6 @@ const App = () => {
           }
         }}
       />
-
       <TodoList todos={todos} deleteTodo={deleteTodo} />
     </div>
   );
