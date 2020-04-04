@@ -1,5 +1,8 @@
+import * as React from "jsx-dom";
 import deleteTask from './deleteTask';
-import * as React from "jsx-dom"
+import completedTask from './completedTask';
+import saveTask from './saveTask';
+
 function Click()
 {
     let inputValue = document.getElementById('Input').value;
@@ -14,8 +17,10 @@ function Click()
         return (
             resultBox.appendChild(
                 <div className='resultBox__newitemBox'>
-                  <input value={inputValue} className="resultBox__newItem"/>
-                  <input type="button" value="x" className="close" onClick={deleteTask}/>
+                    <input type="button" value="+" className="completedTask" onClick={completedTask}/>
+                    <input value={inputValue} className="resultBox__newItem"/>
+                    <input type="button" value="x" className="close" onClick={deleteTask}/>
+                    <input type="button" value="save" className="save" onClick={saveTask}/>
                 </div>
             )
         ); 
