@@ -19,7 +19,7 @@ function Click()
                 <div className='resultBox__newitemBox'>
                     <input type="button" value="+" className="completedTask" onClick={completedTask}/>
                     <input value={inputValue} className="resultBox__newItem"/>
-                    <input type="button" value="x" className="close" onClick={deleteTask}/>
+                    <input type="button" value="del" className="close" onClick={deleteTask}/>
                     <input type="button" value="save" className="save" onClick={saveTask}/>
                 </div>
             )
