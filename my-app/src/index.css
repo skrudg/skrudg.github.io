@@ -1,0 +1,4 @@
+.mainBox__resultBox{
+    display: flex;
+    flex-direction: column;
+}
