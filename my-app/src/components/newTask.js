@@ -1,4 +1,5 @@
 import * as React from "jsx-dom";
+// import React from 'react';
 import deleteTask from './deleteTask';
 import completedTask from './completedTask';
 import saveTask from './saveTask';
@@ -23,7 +24,7 @@ function Click()
                     <input type="button" value="save" className="save" onClick={saveTask}/>
                 </div>
             )
-        ); 
+        );
     }
 }
 export default Click;

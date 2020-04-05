@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {} from '@testing-library/react';
 import NewTask from './components/newTask';
+import Post from './components/Post';
 
 class App extends Component{
   render()
@@ -12,7 +13,7 @@ class App extends Component{
 
         <div className="mainBox__inputBox">
           <input type="text" id="Input" placeholder="input something..."/>
-          <input type="button" value="click on me" id="inputButton" onClick={NewTask}/>
+          <input type="button" value="click on me" id="inputButton" onClick={forPost}/>
         </div>
         
         <div id="mainBox__resultBox">
@@ -24,6 +25,12 @@ class App extends Component{
       </div>
     );
   }
+}
+function forPost()
+{
+  Post();
+  NewTask();
+
 }
 
 
