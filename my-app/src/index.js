@@ -18,7 +18,7 @@ class App extends Component{
         
         <div id="mainBox__resultBox">
           <div className="resultBox__newitemBox">
-            <input className="resultBox__newItem" value="New task will appear below..."/>
+            <input className="resultBox__newItem" defaultValue="New task will appear below..."/>
           </div>
         </div>
 
@@ -30,9 +30,7 @@ function forPost()
 {
   Post();
   NewTask();
-
 }
-
 
 ReactDOM.render(
   <React.StrictMode>

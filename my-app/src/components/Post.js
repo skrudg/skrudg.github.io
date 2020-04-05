@@ -10,10 +10,10 @@ import qs from 'qs';
 // }
 function Post()
 {
-    let inputValue = document.getElementById('Input').value;
-        console.log(inputValue);
-    // let url = "my-json-server.typicode.com/user/repo/posts/1";
-    axios.get("https://jsonplaceholder.typicode.com/todos/1")
+    // let inputValue = document.getElementById('Input').value;
+    // console.log(inputValue);
+    const requestURL = 'http://46.101.146.101:8081/categories/';
+    axios.get(requestURL)
         .then(response => console.log("response", response.data));
     
 
@@ -22,7 +22,7 @@ function Post()
     //     method: 'POST',
     //     headers: { 'content-type': 'application/x-www-form-urlencoded' },
     //     data: qs.stringify(data),
-    //     url,
+    //     requestURL,
     // };
     // axios(options);
 

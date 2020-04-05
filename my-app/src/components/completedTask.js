@@ -1,5 +1,3 @@
-import React from 'react';
-
 function completedTask()
 {
     let complete = document.getElementsByClassName("completedTask");
