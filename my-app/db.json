@@ -1,20 +1,8 @@
 {
   "task": [
     {
-      "taskName": "First successfull step!",
+      "taskName": "hello bitch",
       "id": 1
-    },
-    {
-      "taskName": "Second step",
-      "id": 2
-    },
-    {
-      "taskName": "Third task",
-      "id": 3
-    },
-    {
-      "taskName": "Fourth task",
-      "id": 4
     }
   ]
 }
