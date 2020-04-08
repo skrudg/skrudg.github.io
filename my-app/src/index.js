@@ -20,7 +20,6 @@ class App extends Component{
         
         <div id="mainBox__resultBox">
           <div className="resultBox__newitemBox">
-            <input className="resultBox__newItem" defaultValue="New task will appear below..."/>
           </div>
         </div>
 

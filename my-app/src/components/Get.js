@@ -2,7 +2,7 @@ import axios from 'axios';
 import * as React from "jsx-dom";
 import deleteTask from './deleteTask';
 import completedTask from './completedTask';
-import saveTask from './saveTask';
+import MouseOver from './onmouse';
 function Get()
 {
     const requestURL = 'http://localhost:3000/task';
@@ -22,10 +22,9 @@ function Click(props)
     {
         resultBox.appendChild(
             <div className='resultBox__newitemBox'>
-                <input type="button" value="+" className="completedTask" onClick={completedTask}/>
-                <input value={props.data[i].taskName} className="resultBox__newItem"/>
-                <input type="button" value="del" className="close" onClick={deleteTask}/>
-                <input type="button" value="save" className="save" onClick={saveTask}/>
+                <input type="button" value="+" className="completedTask" onMouseOver={completedTask}/>
+                <input onMouseOver={MouseOver} value={props.data[i].taskName} className="resultBox__newItem"/>
+                <input type="button" value="del" className="close" onMouseOver={deleteTask}/>
             </div>
         )
     }
