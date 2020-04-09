@@ -2,10 +2,10 @@ import axios from 'axios';
 function Post()
 {
     let inputValue = document.getElementById('Input').value;
-    const requestURL = 'http://localhost:3000/task';
+    const requestURL = 'https://my-json-server.typicode.com/ssasai/server/task';
 
     axios.post(requestURL, {
-        taskName: inputValue
+        title: inputValue
       })
       .then(function (response) {
         console.log(response);

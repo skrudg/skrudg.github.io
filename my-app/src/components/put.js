@@ -1,11 +1,9 @@
 import axios from 'axios';
-const requestURL = 'http://localhost:3000/task/';
+const requestURL = 'https://my-json-server.typicode.com/ssasai/server/task/';
 function mouseOver(){
-    // console.log("main");
     let itemTochange = document.getElementsByClassName("resultBox__newItem");
-    let i;
     let ifClicked = 0;
-    for (i = 0; i < itemTochange.length; i++) {
+    for (let i = 0; i < itemTochange.length; i++) {
         itemTochange[i].onclick = function() {
             let div = this.parentElement;
             ifClicked++;
@@ -35,15 +33,13 @@ function mouseOut(ifClicked,itemToChange,props){
                 {
                     let div = this.parentElement;
                     let itemTopush = div.childNodes[1].value;
-                    // console.log(itemToDelete);
                     ifClicked++;
                     for(var i = 0; i < props.data.length; i++)
                     {
-                        if(props.data[i].taskName === itemToChange)
+                        if(props.data[i].title === itemToChange)
                         {
-                            // console.log(props.data[i].id);
                             axios.put(requestURL+props.data[i].id,{
-                                taskName:itemTopush
+                                title:itemTopush
                             })
                             .then(function (response) {
                                 console.log(response);

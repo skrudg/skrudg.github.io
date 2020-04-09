@@ -1,6 +1,6 @@
 import axios from 'axios';
 let itemToDelete = "";
-const requestURL = 'http://localhost:3000/task/';
+const requestURL = 'https://my-json-server.typicode.com/ssasai/server/task/';
 function deleteTask()
 {
     let close = document.getElementsByClassName("close");
@@ -24,9 +24,8 @@ function deleteTask()
 function Click(props){
     for(var i = 0; i < props.data.length; i++)
     {
-        if(props.data[i].taskName === itemToDelete)
+        if(props.data[i].title === itemToDelete)
         {
-            // console.log(props.data[i].id);
             axios.delete(requestURL+props.data[i].id)
             .then(function (response) {
                 console.log(response);
