@@ -15,6 +15,8 @@ function Get()
       .catch(function (error) {
         console.log(error);
       });
+
+    
 }
 function Click(props)
 {
