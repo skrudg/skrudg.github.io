@@ -5,4 +5,4 @@
 * [TASK 5](skrudg.github.io/pr5/pr5.html)
 * [TASK 6](skrudg.github.io/pr6/pr6.html)
 * [TO-DO REACT](https://aqueous-depths-21915.herokuapp.com)++[TodoProjectFiles](https://github.com/skrudg/skrudg.github.io/tree/master/Todo)
-* [IT-git](skrudg.github.io/IT-git/index.html)
+* [IT-git](skrudg.github.io/ITgit/index.html)
