@@ -1,0 +1,64 @@
+@media screen and (max-width: 625px) {
+    .header__navBar{
+        display: none;
+        position: absolute;
+        margin-top: 70px;
+        z-index: 1;
+        flex-wrap: nowrap;
+        background-color: rgb(22, 21, 21);
+        width: 100%;
+    }
+    .header__navBar a{
+        display: flex;
+        padding:15px 10px 15px 10px;
+    }
+    .navlink{
+        font-size: 10px !important;
+    }
+    .menuButtonBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+    .menuButton:hover{
+        cursor: pointer;
+    }
+    .menuShow{
+        display: flex;
+    }
+    .footer__navBar{
+        display: flex;
+        background-color: rgb(22, 21, 21);
+        width: 100%;
+    }
+    .formMainBox{
+        width: 85%;
+    }
+    .footer__logoBox{
+        font-size: 10px;
+    }
+    .countryBox{
+        font-size: 10px;
+    }
+    .footer__socialSites img{
+        width: 15px;
+        height: 15px;
+    }
+    .tab_title h3{
+        font-size: 12px;
+    }
+    .workerInfo{
+        width: 200px;
+        height: 150px;
+    }
+    .workerInfo__photo{
+        height: 120px;
+    }
+    .workerInfo__title{
+        height: 30px;
+    }
+    .workerInfo__title h3{
+        font-size: 10px;
+    }
+}

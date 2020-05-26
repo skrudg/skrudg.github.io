@@ -1,0 +1,175 @@
+*{
+    /* border:1px solid black;   */
+    font-family:'Arial Narrow';
+}
+body{
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: -0.5px;
+    margin-top: -0.5px;
+}
+
+/* ======================================================== */
+.body{
+    flex-direction: column;
+    width: 100%;
+}
+/* ========= Блок для видео =========*/
+.videoBox{
+    width: 100%;
+}
+.videoBox__video{
+    width: 100%;
+}
+
+/* ========= БЛОК О СФЕРАХ УСЛУГ ========= */
+.aboutWorkerBox{
+    flex-direction: column;
+    border-bottom: 1px solid rgb(153, 210, 248);
+}
+.tab_title{
+    flex-direction: row;
+}
+.tab_title h3{
+    margin: 30px 20px 30px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+.tablinks:hover{
+    color: rgb(153, 210, 248);
+}
+.workersInfobox{
+    flex-wrap: wrap;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.workerInfo{
+    width: 350px;
+    height: 300px;
+    margin: 15px 15px 15px 15px;
+    transition: all 0.5s ease-out;
+}
+.workerInfo:hover{
+    transform: scale(1.1);
+}
+.workerInfo__photo{
+    width: 100%;
+    height: 220px;
+}
+.workerInfo__title{
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(153, 210, 248);
+    margin-top: -3px;
+    text-shadow: 1px 1px 1px black, 0 0 1em grey;
+}
+.workerInfo__title h3{
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* ======== БЛОК ОБ ОПИСАНИЯХ УСЛУГ ========= */
+.typeOfWork{
+    border: 1px solid rgb(153, 210, 248);
+    background-image: url("photo/back.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.5s ease-out;
+    width: 350px;
+    height: 300px;
+    margin: 15px 15px 15px 15px;
+    transition: all 0.5s ease-out;
+}
+.typeOfWork:hover{
+    transform: scale(1.1);
+}
+.typeOfWork__list{
+    align-self: flex-start;
+}
+.typeOfWork h2{
+    color: white;
+    text-shadow: 1px 1px 1px black, 0 0 1em black;
+}
+
+/* ======== БЛОК ДЛЯ ПОДАЧИ ЗАЯВОК =========*/
+.applicationBox{
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(153, 210, 248);
+}
+.applicationBox__title{
+    margin: 30px 20px 30px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+.formMainBox{
+    flex-direction: column;
+    width: 50%;
+    border:1px solid white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.formMainBox legend{
+    color: black;
+    font-size: 20px;
+}
+.formMainBox label{
+    margin: 10px 0px 10px 0px;
+}
+.labelItem{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+.labelItem input{
+    width: 70%;
+    border-radius: 4px;
+}
+.formMainBox label p{
+    margin-left: 15px;
+}
+.about input{
+    height: 100px;
+}
+.submitBox{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#submitButton{
+    padding: 10px 15px 10px 15px;
+    border: 1px solid rgb(153, 210, 248);
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+}
+#submitButton:hover{
+    background-color: white;
+}
+
+.googleMap{
+    width: 100%;
+    flex-direction: column;
+}
+
+.active{
+    color: rgb(153, 210, 248) !important;
+}

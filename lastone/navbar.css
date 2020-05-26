@@ -1,0 +1,161 @@
+.all_center{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.header{
+    /* border: 1px solid black; */
+    display: flex;
+    background-color: rgb(22, 21, 21);
+    width: 100%;
+}
+.header__logobox{
+    /* border: 1px solid black; */
+    width: 20%;
+    padding-left: 10px;
+    height: 85px;
+    
+}
+.logoWord{
+    /* border: 1px solid black; */
+    text-decoration: none;
+    font-size: 40px;
+    font-family: Impact, fantasy;
+    color: rgb(133, 134, 134);
+}
+.header__navBar{
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 85px;
+    color: white;
+    flex-wrap: wrap;
+}
+.navlink{
+    /* border: 1px solid black; */
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white !important;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.navlink:hover{
+    text-decoration: none;
+    color: rgb(70, 163, 226) !important;
+}
+.header__dropdownBox{
+    width: 20%;
+    height: 85px;
+}
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+    border:1px solid rgb(70, 163, 226);
+    padding: 15px;
+}
+.dropbtn:hover {
+    background-color: rgb(70, 163, 226);
+    color: black !important;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 92px;
+    z-index: 1;
+}
+.dropdown-content a {
+    display: block;
+    padding:15px 20px 15px 20px;
+}
+.show {display:block;}
+
+#callWhatsapp{
+    background-color: black;
+    color: white;
+    border:1px solid rgb(70, 163, 226);
+    transition: 0.5s;
+}
+#callTelegram{
+    background-color: black;
+    color: white;
+    border:1px solid rgb(70, 163, 226);
+    transition: 0.5s;
+}
+#callPhone{
+    background-color: black;
+    color: white;
+    border:1px solid rgb(70, 163, 226);
+    transition: 0.5s;
+}
+#callWhatsapp:hover{
+    background-color: rgb(60, 156, 84);
+    color: black !important;
+    border: 1px solid green;
+    transition: 0.5s;
+}
+#callTelegram:hover{
+    background-color: rgb(104, 160, 233);
+    border:1px solid blue;
+    color: black !important;
+    transition: 0.5s;
+}
+#callPhone:hover{
+    background-color: rgb(184, 184, 97);
+    border:1px solid brown;
+    color: black !important;
+    transition: 0.5s;
+}
+
+
+
+/*  ======== FOOTER БЛОК ========= */
+.footer{
+    border-top: 1px solid rgb(153, 210, 248);
+    padding: 20px 0px 20px 0px;
+    background-color:rgb(22, 21, 21);
+    color: white;
+    width: 100%;
+    flex-direction: column;
+}
+.footer__logoBox{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+}
+.countryBox{
+    width: 40%;
+}
+.footer__socialMediaBox{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+}
+.footer__socialSites{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.footer__navbar{
+    height: 30px;
+    border-bottom: 1px solid white;
+    width: 90%;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.footer__navlink{
+    text-decoration: none;
+    color: white;
+}
+.footer__navlink:hover{
+    color: rgb(153, 210, 248);
+}
+.menuButtonBox{
+    display: none;
+}
