@@ -12,14 +12,30 @@
         display: flex;
         padding:15px 10px 15px 10px;
     }
+    .logoWord{
+        font-size: 30px;
+    }
     .navlink{
         font-size: 10px !important;
+    }
+    .header__logobox{
+        width: 40%;
+        justify-content: flex-start;
+        padding-left: 5%;
     }
     .menuButtonBox{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 60%;
+        width: 20%;
+    }
+    .header__dropdownBox{
+        width: 40%;
+        /* padding-right: 5%; */
+        justify-content: flex-end;
+    }
+    .dropbtn{
+        padding: 10px 10px 10px 10px;
     }
     .menuButton:hover{
         cursor: pointer;
